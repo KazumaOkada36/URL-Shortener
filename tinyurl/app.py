@@ -1,5 +1,8 @@
 import flask
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, redirect
+import db
+import config
+
 app = Flask(__name__)
 
 @app.get("/health")
